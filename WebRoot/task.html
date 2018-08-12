@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cover</title>
+    <meta name="keywords" content="休闲帮 音乐">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/main.css" rel="stylesheet">
+    <script src='js/animate.js'></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/main.js'></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        a{
+            font-family: 宋体;
+        }
+        label{
+            font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        }
+        h2{
+            font-family: 宋体;
+        }
+        .btn-primary {
+            border: 1px solid lightcyan;
+            background: hotpink;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav第一个 -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+        	<!-- 左上角logo图片 -->
+    		<div style="position:fixed;left:53px;">
+    			<img src="images/logo/mango1.png" style="width: 50px;height: 50px;z-index:2000;">
+    		</div>
+    		<!-- 左上角logo图片结束 -->
+            <div class="navbar-header">
+                <a href="Cover.html" class="navbar-brand" style="font-size: 34px">空闲帮</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="Cover.html">主页</a></li>
+                    <li><a href="task.html">我的任务</a></li>
+                    <li class="navLi"><a href="Photo.html">我的项目</a></li>
+                    <li class="navLi"><a href="Photo.html">我的空间</a></li>
+
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search for...">
+                        <span class="input-group-btn">
+                                <a href="#" type="button" class="btn btn-primary">Go</a>
+                            </span>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
+                            账号<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">我的资料</a> </li>
+                            <li><a href="#">发布任务</a> </li>
+                            <li><a href="#">test</a> </li>
+                            <li><a href="#">test</a> </li>
+                            <li class="divider"></li>
+                            <li><a href="home2.html">退出账号</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav第一个结束 -->
+
+    <!-- nav第二个 -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <!-- 左上角logo图片 -->
+        <div style="position:fixed;left:53px;">
+          <img src="images/logo/mango1.png" style="width: 50px;height: 50px;z-index:2000;">
+        </div>
+        <!-- 左上角logo图片结束 -->
+            <div class="navbar-header">
+                <a href="Cover.html" class="navbar-brand" style="font-size: 34px">空闲帮</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="home.html">主页</a></li>
+                    <li><a href="练习第二遍.html">我的任务</a></li>
+                    <li><a href="Photo.html">test</a></li>
+                    <li><a href="#">test</a></li>
+
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search for...">
+                        <span class="input-group-btn">
+                                <a href="#" type="button" class="btn btn-primary">Go</a>
+                            </span>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
+                            账号<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">我的资料</a> </li>
+                            <li><a href="#">发布任务</a> </li>
+                            <li><a href="#">test</a> </li>
+                            <li><a href="#">test</a> </li>
+                            <li class="divider"></li>
+                            <li><a href="home2.html">退出账号</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav第二个结束 -->
+
+    <!-- 蜂巢图 -->
+    <div style="background-color: #f8f8f8">
+        <div class="container">
+            <div class="row" >
+                <div class="col-md-12" style="height:300px;margin:50px 0 30px">
+    				<div style="position:relative">
+    					<img src="images/logo/square_large.png" id='beeimg1' class='beeimg'>
+    					<img src="images/logo/square_small.png" id='beeimg2' class='beeimg'>
+    					<img src="images/logo/square_small.png" id='beeimg3' class='beeimg'>
+    					<img src="images/logo/square_small.png" id='beeimg4' class='beeimg'>
+    					<div>
+    						<span id="beeword1" class='beeimg'>私人顾问<br>private</span>
+    						<span id="beeword2" class='beeimg'>私人顾问<br>private</span>
+    						<span id="beeword3" class='beeimg'>私人顾问<br>private</span>
+    						<span id="beeword4" class='beeimg'>私人顾问<br>private</span>
+    					</div>
+    					<h2 id='beeh2'>零碎时间利用网<br>在这里没有浪费时间的概念</h2>
+    				</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 蜂巢图 -->
+
+
+
+<div>
+    <div class="container">
+        <div class="row" style="padding-top: 20px;padding-bottom: 2px;">
+           <div class="col-md-12">
+               <div class="media">
+                   <div class="media-left">
+                       <a href="#">
+                           <img class="media-object" src="images/cd/02.jpg" width="80"><br>
+                           <button class="btn btn-primary" >选择</button>
+                       </a>
+                   </div>
+                   <div class="media-body">
+                       <h4 class="media-heading" style="color:#222;">Media heading</h4>
+                       <a style="color: #222">sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                       sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+                       sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+                       sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr</a>
+                   </div>
+               </div>
+               <hr>
+               <div class="media">
+
+                   <div class="media-body">
+                       <h4 class="media-heading" style="color:#222;">Media heading</h4>
+                       <a style="color: #222">sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                           sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+                           sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+                           sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+
+                       </a>
+                   </div>
+                   <div class="media-right">
+                       <a href="#">
+                           <img class="media-object" src="images/cd/02.jpg" width="80">
+                           <br>
+                           <button class="btn btn-primary" >选择</button>
+                       </a>
+                   </div>
+               </div>
+               <hr>
+               <div class="media">
+                   <div class="media-left">
+                       <a href="#">
+                           <img class="media-object" src="images/cd/02.jpg" width="80">
+                           <br>
+                           <button class="btn btn-primary" >选择</button>
+                       </a>
+                   </div>
+                   <div class="media-body">
+                       <h4 class="media-heading" style="color:#222;">Media heading</h4>
+                       <a style="color: #222">sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                           sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+                           sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+                           sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+
+                       </a>
+                   </div>
+               </div>
+               <hr>
+               <div class="media">
+
+                   <div class="media-body">
+                       <h4 class="media-heading" style="color:#222;">Media heading</h4>
+                       <a style="color: #222">sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                           sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+                           sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+                           sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+
+                       </a>
+                   </div>
+                   <div class="media-right">
+                       <a href="#">
+                           <img class="media-object" src="images/cd/02.jpg" width="80">
+                           <br>
+                           <button class="btn btn-primary" >选择</button>
+                       </a>
+                   </div>
+               </div>
+           </div>
+
+        </div>
+    </div>
+</div>
+
+<div style="background-color: #ffc107">
+    <div class="container">
+        <div class="row">
+            <HR width="100%" color=#987cb9 >
+            <div class="col-md-4" style="text-align: center" >
+                <a href="#" style="color: #333;" >测试</a><br>
+                <a href="#" style="color: #333">测试</a>
+                <br>
+                <a href="#" style="color: #333">测试</a>
+                <br>
+                <a href="#" style="color: #333">测试</a>
+                <br>
+                <a href="#" style="color: #333">测试</a>
+                <br>
+                <a href="#" style="color: #333">测试</a>
+            </div>
+            <div class="col-md-4" style="text-align: center;">
+                <a href="#" style="color: #333">测试</a>
+                <br>
+                <a href="#" style="color: #333">测试</a>
+                <br>
+                <a href="#" style="color: #333">测试</a>
+                <br>
+                <a href="#" style="color: #333">测试</a>
+                <br>
+                <a href="#" style="color: #333">测试</a><br>
+                <a href="#" style="color: #333">测试</a>
+            </div>
+            <div class="col-md-4" style="text-align: center">
+                <a href="#" style="color: #333">测试</a>
+                <br>
+                <a href="#" style="color: #333">测试</a>
+                <br>
+                <a href="#" style="color: #333">测试</a><br>
+                <a href="#" style="color: #333">测试</a><br>
+                <a href="#" style="color: #333">测试</a><br>
+                <a href="#" style="color: #333">测试</a>
+            </div>
+            <div class="col-md-12">   <HR width="100%" color=#987cb9 ></div>
+            <h6>coypright 2017-2018</h6>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

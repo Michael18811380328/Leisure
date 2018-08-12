@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        a,label{
+            font-family: "Microsoft Yahei";
+        }
+        h1,label{
+            color: #111;
+        }
+        body {
+            background-color:#ffc107;
+        }
+        .btn-danger{
+            border:1px solid #ddd;
+            background: #fff;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            color:#222;
+        }
+        .btn-primary {
+            border: 1px solid lightcyan;
+            background: #fff;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            color:#222;
+        }
+		.form-horizontal .control-label {
+			text-align: center;
+			padding-left: 180px;
+		}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="opacity: 0.8;">
+        <div class="container">
+            <div style="position:fixed;left:53px;">
+                <img src="../images/logo/mango1.png" style="width: 50px;height: 50px;z-index:2000;">
+            </div>
+            <div class="navbar-header">
+                <a href="../Cover.html" class="navbar-brand" style="font-size: 33px">空闲帮</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="../home.html">主页</a></li>
+                    <li><a href="练习第二遍.html">我的任务</a></li>
+                    <li><a href="Photo.html">test</a></li>
+                    <li><a href="#">test</a></li>
+
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search for...">
+                        <span class="input-group-btn">
+                                <a href="#" type="button" class="btn btn-primary">Go</a>
+                            </span>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
+                            账号<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">我的资料</a> </li>
+                            <li><a href="#">发布任务</a> </li>
+                            <li><a href="#">test</a> </li>
+                            <li><a href="#">test</a> </li>
+                            <li class="divider"></li>
+                            <li><a href="../home2.html">退出账号</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container" style="padding-top: 70px;padding-bottom: 60px">
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" style="padding:20px 0px 50px 100px;"><h1>个人信息修改</h1></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">个人简介:</label>
+                        <div class="col-md-6">
+                            <textarea class="form-control" style="resize:none;height:50px" id="message-text"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">用户名:</label>
+                        <div class="col-md-6"><input class="form-control" id="Username" ></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">密码:</label>
+                        <div class="col-md-6"><input class="form-control" id="Username" ></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">确认密码:</label>
+                        <div class="col-md-6"><input class="form-control" id="Username" ></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">电话:</label>
+                        <div class="col-md-6"><input class="form-control" id="Username" ></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">紧急联系人电话:</label>
+                        <div class="col-md-6"><input class="form-control" id="Username" ></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">紧急联系人电话2:</label>
+                        <div class="col-md-6"><input class="form-control" id="Username"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">身份证号码:</label>
+                        <div class="col-md-6"><input class="form-control" id="Username" ></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">身份证照片正反面:</label>
+                        <div class="col-md-6">
+                            <img src="../images/cd/01.jpg" height="100"/>
+                            <input  type="file"  class="form-control" id="Username" >
+                            <button class="btn btn-primary">上传</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">爱好:</label>
+                        <div class="col-md-6"><input class="form-control" id="Username" ></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">性别:</label>
+                        <div class="col-md-6">
+                            <label class="radio-inline"><input type="radio" name="sex" id=boy" value="option1">男</label>
+                            <label class="radio-inline"><input type="radio" name="sex" id="girl" value="option2">女</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">身高:</label>
+                        <div class="col-md-6"><input class="form-control" id="Username" ></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">年龄:</label>
+                        <div class="col-md-6"><input class="form-control" id="Username" ></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">地区:</label>
+                        <div class="col-md-6"><input class="form-control" id="Username"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">情感状态:</label>
+                        <div class="col-md-6"><input class="form-control" id="Username" ></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">个人照片:</label>
+                        <div class="col-md-6">
+
+                            <img src="../images/cd/01.jpg" height="100"/>
+                            <input  type="file"  class="form-control" id="Username">
+                            <button class="btn btn-primary">上传</button></div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-6"><button class="btn btn-danger">点击修改</button></div>
+                    </div>
+
+                </form>
+            </div>
+        </div> 
+    </div>
+    <script>
+        $(function(){
+            var userName;
+            var password;
+            function sub() {
+                userName = $("#username1").val();
+                password = $("input[type='password']")[0].value;
+                if (!userName){
+                    alert("用户名不能为空");
+                }
+                if (!password){
+                    alert("密码不能为空");
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  
+  <display-name>Leisure</display-name>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UploadHandleServlet</servlet-name>
+    <servlet-class>com.servlet.UploadHandleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>showtaskdetail</servlet-name>
+    <servlet-class>com.servlet.showtaskdetail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Confirm</servlet-name>
+    <servlet-class>com.servlet.Confirm</servlet-class>
+  </servlet>
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Confirm_j</servlet-name>
+    <servlet-class>com.servlet.Confirm_j</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>com.servlet.AdminServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowUserInform</servlet-name>
+    <servlet-class>com.servlet.ShowUserInform</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DisplayUserInfo</servlet-name>
+    <servlet-class>com.servlet.DisplayUserInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DisplayTaskInfo</servlet-name>
+    <servlet-class>com.servlet.DisplayTaskInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChooseExucutePerson</servlet-name>
+    <servlet-class>com.servlet.ChooseExucutePerson</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterUploadFile</servlet-name>
+    <servlet-class>com.servlet.RegisterUploadFile</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteTaskServlet</servlet-name>
+    <servlet-class>com.servlet.DeleteTaskServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>testcopy</servlet-name>
+    <servlet-class>com.servlet.testcopy</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelfPhotoAjax</servlet-name>
+    <servlet-class>com.servlet.SelfPhotoAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>uploadImageAjaxServlet</servlet-name>
+    <servlet-class>com.servlet.uploadImageAjaxServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddApply</servlet-name>
+    <servlet-class>com.servlet.AddApply</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddJudgeServlet</servlet-name>
+    <servlet-class>com.servlet.AddJudgeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.servlet.LogoutServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>showtaskdetail</servlet-name>
+    <url-pattern>/servlet/showtaskdetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadHandleServlet</servlet-name>
+    <url-pattern>/servlet/UploadHandleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Confirm</servlet-name>
+    <url-pattern>/servlet/Confirm</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>Confirm_j</servlet-name>
+    <url-pattern>/Confirm_j</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/servlet/AdminServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ShowUserInform</servlet-name>
+    <url-pattern>/servlet/ShowUserInform</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DisplayUserInfo</servlet-name>
+    <url-pattern>/DisplayUserInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DisplayTaskInfo</servlet-name>
+    <url-pattern>/DisplayTaskInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChooseExucutePerson</servlet-name>
+    <url-pattern>/ChooseExucutePerson</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>RegisterUploadFile</servlet-name>
+    <url-pattern>/RegisterUploadFile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteTaskServlet</servlet-name>
+    <url-pattern>/DeleteTaskServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>testcopy</servlet-name>
+    <url-pattern>/testcopy</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelfPhotoAjax</servlet-name>
+    <url-pattern>/SelfPhotoAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>uploadImageAjaxServlet</servlet-name>
+    <url-pattern>/uploadImageAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddApply</servlet-name>
+    <url-pattern>/AddApply</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddJudgeServlet</servlet-name>
+    <url-pattern>/AddJudgeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+
+  <welcome-file-list>
+    <welcome-file>Cover.jsp</welcome-file>
+      </welcome-file-list>
+</web-app>

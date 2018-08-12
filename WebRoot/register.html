@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <meta name="keywords" content="休闲帮 音乐">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/main.css" rel="stylesheet">
+    <script src='js/animate.js'></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/main.js'></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            padding-top: 200px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $("#form1").submit (function () {
+                if($("#name").val()==""){
+                    alert('用户名为空');
+                    return;
+                }
+                if($("#password1").val()=="" || $("#password2").val()==""){
+                    alert('密码为空');
+                    return;
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="form1" action="#" method="post">
+        <table align="center">
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" id="name" placeholder="email"></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" id="password1"></td>
+            </tr>
+            <tr>
+                <td>确认密码：</td>
+                <td><input type="password" id="password2"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="注册"></td>
+
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>

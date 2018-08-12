@@ -1,0 +1,26 @@
+/*admin文件夹下公共css*/
+
+body {
+    padding-top: 300px;
+    background-color: #ffc107;
+}
+
+.navbar-fixed-top {
+    opacity: 0.8;
+}
+.navbar-fixed-top .container .logo {
+    position: fixed;
+    left: 53px;
+}
+.navbar-fixed-top .container .logo img {
+    width: 50px;
+    height: 50px;
+    z-index: 2000;
+}
+
+.container a{
+	font-family: "Microsoft Yahei";
+}
+#btn-register{
+	color: snow;
+}

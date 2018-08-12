@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cover</title>
+    <meta name="keywords" content="休闲帮 音乐">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/main.css" rel="stylesheet">
+    <script src='js/animate.js'></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/main.js'></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        a,h2{
+            font-family: 宋体;
+        }
+        label{
+            font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        }
+        .btn-primary {
+            border: 1px solid lightcyan;
+            background: hotpink;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+        }
+        .tac {
+            text-align: center;
+        }
+        .colororange{
+            color:orange;
+        }
+        .colorwhite{
+            color:white;
+        }
+        .opacity80{
+            opacity: 0.8;
+        }
+        .navbar-brand {
+            font-size: 33px;
+        }
+        #information {
+            padding-top: 80px;
+        }
+        hr {
+            width: 100%;
+            color: #987cb9;
+        }
+        .media-body {
+            border-bottom: 60px;
+        }
+        #personal {
+            background-image: url('images/bg/4501.jpg');
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top opacity80" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="${pageContext.request.contextPath}/Cover.jsp" class="navbar-brand">空闲帮</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="home.html">主页</a></li>
+                <li><a href="练习第二遍.html">我的任务</a></li>
+                <li><a href="Photo.html">test</a></li>
+                <li><a href="#">test</a></li>
+
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for...">
+                    <span class="input-group-btn">
+                            <a href="#" type="button" class="btn btn-primary">Go</a>
+                        </span>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
+                        账号<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">我的资料</a> </li>
+                        <li><a href="#">发布任务</a> </li>
+                        <li><a href="#">test</a> </li>
+                        <li><a href="#">test</a> </li>
+                        <li class="divider"></li>
+                        <li><a href="home2.html">退出账号</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div>
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-12">
+                <h2 class="tac colorwhite" id="information" style="">
+                    个人信息详情
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="personal" style="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="images/cd/02.jpg" width="110"><br>
+                            <button class="btn btn-primary" >修改个人信息</button>
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <div class="col-md-2 col-md-offset-1">
+                        <h4 class="media-heading" class="colorwhite">用户名</h4>
+                        <a class="colorwhite">sdkdddd</a>
+                        <h4 class="media-heading" class="colorwhite">性别</h4>
+                        <a class="colorwhite">sdkdddd</a>
+                        <h4 class="media-heading" class="colorwhite">身高</h4>
+                        <a class="colorwhite">sdkdddd</a>
+                        </div>
+                        <div class="col-md-4 col-md-offset-1">
+                            <h4 class="media-heading" class="colorwhite">个人简介</h4>
+                            <h4 class="media-heading" class="colorwhite">爱好</h4>
+                            <a class="colorwhite">sdkdddd</a>
+                            <h4 class="media-heading" class="colorwhite">年龄</h4>
+                            <a class="colorwhite">sdkdddd</a>
+                            <h4 class="media-heading" class="colorwhite">情感状态</h4>
+                            <a class="colorwhite">sdkdddd</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="media">
+                    <div class="media-body">
+                        <h4 class="media-heading" class="colorwhite">个人简介</h4>
+                        <a class="colorwhite">sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+                        sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+                        sdkddddddddCras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cr
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <div class="row">
+            <HR/>
+            <div class="col-md-4" class="tac">
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a>
+            </div>
+            <div class="col-md-4" class="tac">
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a>
+            </div>
+            <div class="col-md-4" class="tac">
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a><br>
+                <a href="#" class="colororange">测试</a>
+            </div>
+            <div class="col-md-12">
+                <HR/>
+            </div>
+            <h6>coypright 2017-2018</h6>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

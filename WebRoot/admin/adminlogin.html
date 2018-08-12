@@ -3,45 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../css/cssReset.css">
-    <link rel="stylesheet" href="../bootstrap.min.css">
-    <link href="../自定义.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="../jquery-2.1.4.min.js"></script>
-    <script src="../bootstrap.min.js"></script>
-    <style>
-        body{
-            padding-top: 300px;
-            background-color: #ffc107;
-        }
-    </style>
-
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/adminlogin.css">
+    <script src="../js/admin.js"></script>
 </head>
 <body>
-<script type="text/javascript">
-function sub(){ 
-if (form1.username.value == null || form1.username.value==""){
-alert("请输入用户名");
-return false;
-}
-if (form1.password.value == null || form1.password.value==""){
-alert("请输入密码");
-return false;
-}
-return true;
-}
-</script> 
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="opacity: 0.8;">
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-        <div style="position:fixed;left:53px;">
-            <img src="${pageContext.request.contextPath}/images/logo/方案一 芒果图.png" style="width: 50px;height: 50px;z-index:2000;">
+        <div class="logo">
+            <img src="../images/logo/mango1.png" >
         </div>
         <div class="navbar-header">
             <a href="../Cover.jsp" class="navbar-brand" style="font-size: 33px">空闲帮</a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a style="font-family: 微软雅黑" href="adminmain.jsp">管理员主页</a></li>
+                <li><a href="adminmain.jsp">管理员主页</a></li>
             </ul>
         </div>
     </div>
@@ -51,7 +33,7 @@ return true;
         <div class="col-md-6 col-md-offset-3">
             <form class="form-horizontal" name="form1" action="../servlet/AdminServlet?name=login" method="post" onSubmit="return sub();">
                 <div class="form-group">
-                    <label class="col-md-2 control-label" id='username' style="font-family: 微软雅黑">用户名</label>
+                    <label class="col-md-2 control-label" id='username' >用户名</label>
                     <div class="col-md-7">
                         <input id="username1" name="username"  type="text" class="form-control" placeholder="UserName">
                     </div>
@@ -65,21 +47,19 @@ return true;
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10" id='login-register'>
                         <button type="submit" class="btn btn-default" onclick="sub()" id="login">登陆</button>
-                                                <br>
-                        
-                        
+                        <br>
                     </div>
-
                 </div>
             </form>
             
-            <div class="col-md-offset-1 col-md-10" style="margin-left:150px;">
-                            <span id='nologin'>还没有账号?</span>
-                            <button class="btn btn-success" id="register"><a href="adminregister.jsp" style="color: snow">注册</a> </button>
-                        </div>
+            <div class="col-md-offset-1 col-md-10"">
+            <span id='nologin'>还没有账号?</span>
+            <button class="btn btn-success" id="register">
+                <a href="adminregister.jsp" id="btn-register">注册</a>
+            </button>
+            </div>
         </div>
     </div>
 </div>
-
 </body>
 </html>

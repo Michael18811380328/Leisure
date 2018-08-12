@@ -1,0 +1,48 @@
+/*瀑布流 Michael An 2018-06-14*/
+
+#pubu {
+	margin:0 auto;
+	position:relative;
+}
+#pubu .box {
+	width:280px;
+	height:auto;
+	padding:0;
+	float:left;
+}
+#pubu .box .pic {
+	width:auto;
+	height:auto;
+    box-shadow:1px 1px 4px #ddd,-1px -1px 4px #ddd;
+    border-radius:4px;
+}
+#pubu .box .pic img {
+    display: block;
+	width:240px;
+    margin:0 auto;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.starter{
+	background-color: #ffffff;
+	padding: 40px 20px 10px 20px;
+	text-align: center;
+	border-bottom: 1px solid #d58512;
+	margin-bottom: 7mm;
+	/*直接使用mm单位很少见*/
+}
+.btn-danger{
+	border:1px solid #d9534f;
+	background: #080808;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	/*设计css3考虑到兼容性*/
+}
+
+a{
+	color:#8c8c8c;
+}
+a:hover{
+	color: #555555;
+	text-decoration: none;
+}
