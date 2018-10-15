@@ -1,396 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Cover</title>
-    <meta name="keywords" content="休闲帮 音乐">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="css/main.css" rel="stylesheet">
-    <script src='js/animate.js'></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src='js/main.js'></script>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <title>Cover</title>
+  <meta name="keywords" content="休闲帮 音乐">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="css/main.css" rel="stylesheet">
+  <script src='js/animate.js'></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src='js/main.js'></script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- 中部广告组件 -->
-    <div id="addiv">
-        <h2 id="adh2">空闲帮欢迎你</h2>
-        <p class='ad'>CSS，即级联样式表，能从 HTML 描述的内容生成专业而又整洁的文件。很多 CSS 需要通过 HTTP 请求来引入（除非使用内联 CSS），所以你要努力去除累赘的 CSS 文件，但要注意保留其重要特征。</p>
-        <p class='ad'>如果你的 Banner、插件和布局样式是使用 CSS 保存在不同的文件内，那么，访问者的浏览器每次访问都会加载很多文件。虽然现在 HTTP/2 的存在，减少了这种问题的发生，但是在外部资源加载的情况下，仍会花费较长时间。要了解如何减少 HTTP 请求以大幅度缩减加载时间，请阅读WordPress 性能。</p>
-        <img src="./images/logo/close.png" id='close'>
-    </div>
+  <!-- 中部广告组件 -->
+  <div id="addiv">
+    <h2 id="adh2">空闲帮欢迎你</h2>
+    <p class='ad'>CSS，即级联样式表，能从 HTML 描述的内容生成专业而又整洁的文件。很多 CSS 需要通过 HTTP 请求来引入（除非使用内联 CSS），所以你要努力去除累赘的 CSS 文件，但要注意保留其重要特征。</p>
+    <p class='ad'>如果你的 Banner、插件和布局样式是使用 CSS 保存在不同的文件内，那么，访问者的浏览器每次访问都会加载很多文件。虽然现在 HTTP/2 的存在，减少了这种问题的发生，但是在外部资源加载的情况下，仍会花费较长时间。要了解如何减少 HTTP 请求以大幅度缩减加载时间，请阅读WordPress 性能。</p>
+    <img src="./images/logo/close.png" id='close'>
+  </div>
 
-    <!-- 导航栏组件 -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-
-            <!-- 芒果图标-->
-            <div id="mangodiv">
-                <img src="images/logo/mango1.png" id="mango">
-            </div>
-
-            <div class="navbar-header">
-                <a href="Cover.html" class="navbar-brand"><h1>空闲帮</h1></a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="navLi"><a href="home.html">主页</a></li>
-                    <li class="navLi"><a href="task.html">我的任务</a></li>
-                    <li class="navLi"><a href="Photo.html">我的项目</a></li>
-                    <li class="navLi"><a href="Photo.html">我的空间</a></li>
-                </ul>
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Search for..">
-                        <span class="input-group-btn">
-                                <a href="javascript0;" type="button" class="btn btn-primary">Go</a>
-                        </span>
-                    </div>
-                </form>
-                <ul class="nav navbar-nav navbar-right">
-                    <li> <a href="#" data-toggle="modal" data-target="#login">登录</a></li>
-                    <li> <a href="#" data-toggle="modal" data-target="#register">注册</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- 导航结束 -->
-
-    <!-- 用户登录 -->
-    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">用户登录</h4>
-                </div>
-
-                <div class="modal-body">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label class="col-md-2 control-label">用户名</label>
-                            <div class="col-md-10"><input class="form-control" id="Username" placeholder="Email"></div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-2 control-label">密码</label>
-                            <div class="col-md-10"><input class="form-control" id="Password" placeholder="password"></div>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button><button type="button" class="btn btn-primary">点击登录</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 用户登录结束 -->
-
-    <!-- 用户注册 -->
-    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">欢迎注册</h4>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label class="col-md-4 control-label red">用户名</label>
-                            <div class="col-md-6"><input class="form-control" id="Username" ></div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label red">密码</label>
-                            <div class="col-md-6"><input class="form-control" id="Username" ></div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label red">确认密码</label>
-                            <div class="col-md-6"><input class="form-control" id="Username" ></div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label red">电话</label>
-                            <div class="col-md-6"><input class="form-control" id="Username" ></div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label red">紧急联系人电话</label>
-                            <div class="col-md-6"><input class="form-control" id="Username" ></div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">紧急联系人手机</label>
-                            <div class="col-md-6"><input class="form-control" id="Username"></div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label red">身份证号码</label>
-                            <div class="col-md-6"><input class="form-control" id="Username" ></div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label red">身份证照片</label>
-
-                            <div class="col-md-6">  <img src="images/cd/01.jpg" height="100"/><input  type="file"  class="form-control" id="Username" >
-                                <button class="btn btn-primary">上传</button></div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">身高</label>
-                            <div class="col-md-6"><input class="form-control" id="Username" ></div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label red">年龄</label>
-                            <div class="col-md-6"><input class="form-control" id="Username" ></div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label red">地区</label>
-                            <div class="col-md-6"><input class="form-control" id="Username"></div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">性别</label>
-                            <div class="col-md-6">
-                                <label class="radio-inline"><input type="radio" name="sex" id=boy" value="option1">单身</label>
-                                <label class="radio-inline"><input type="radio" name="sex" id="girl" value="option2">恋爱</label>
-                                <label class="radio-inline"><input type="radio" name="sex" id="girl" value="option2">已婚</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">个人照片</label>
-                            <div class="col-md-6">
-                                <img src="images/cd/01.jpg" height="100"/>
-                                <input  type="file"  class="form-control" id="Username">
-                                <button class="btn btn-primary">上传</button></div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">性别</label>
-                            <div class="col-md-6">
-                                <label class="radio-inline"><input type="radio" name="sex" id=boy" value="option1">男</label>
-                                <label class="radio-inline"><input type="radio" name="sex" id="girl" value="option2">女</label>
-                                <label class="radio-inline"><input type="radio" name="sex" id="girl" value="option2">保密</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">地区</label>
-                            <div class="col-md-6">
-    							<div class="dropdown" style="position realtive;">
-                                    <button class="btn btn-default dropdown-toggle" id="dropdown1" type="button" data-toggle="dropdown"
-                                           aria-haspopup="true" aria-expanded="true">
-                                        请选择<span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown1" style="position：absolute; top：34px;">
-                                        <li><a href="#">海淀</a> </li>
-                                        <li><a href="#">朝阳</a> </li>
-                                        <li><a href="#">丰台</a> </li>
-                                        <li><a href="#">东城区</a> </li>
-                                        <li><a href="#">西城区</a> </li>
-                                        <li><a href="#">通州区</a> </li>
-                                        <li><a href="#">昌平区</a> </li>
-                                        <li><a href="#">石景山</a> </li>
-                                        <li class="divider"></li>
-                                        <li><a href="../home2.html">其他</a> </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 兴趣爱好文本框 -->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label red">爱好</label>
-                            <div class="col-md-6"><input class="form-control" id="Username"></div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-md-4 control-label">民族</label>
-                            <div class="col-md-6">
-                                <label class="radio-inline"><input type="radio" name="sex" id=boy" value="option1">汉族</label>
-                                <label class="radio-inline"><input type="radio" name="sex" id="girl" value="option2">藏族</label>
-                                <label class="radio-inline"><input type="radio" name="sex" id="girl" value="option2">维吾尔族</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-4"></div>
-                        </div>
-
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                        点击注册
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 用户注册结束 -->
-    
-    <!-- 标题 -->
-    <div id="mainword">
-        <div class="container">
-            <div class="row" >
-                <div class="col-md-12">
-                    <h2>零碎时间利用网络<br>我们没有浪费时间的概念</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 内容 -->
+  <!-- 导航栏组件 -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-        <div class="row" id="product">
 
-            <div class="col-md-4">
-                <div class="thumbnail" id="Largeimgdiv">
-                    <img src="images/cd/02.jpg" class="img-circle" id="Largeimg" >
-                    <div class="caption">
-                        <h3>Michael Jackson</h3>
-                        <p clsss="description">American famous dancer</p>
-                        <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
-                    </div>
-                </div>
-            </div>
+      <!-- 芒果图标-->
+      <div id="mangodiv">
+        <img src="images/logo/mango1.png" id="mango">
+      </div>
 
-            <div class="col-md-4">
-                <div class="thumbnail" id="Largeimgdiv">
-                    <img src="images/cd/41.jpg" class="img-circle" id="Largeimg" >
-                    <div class="caption">
-                        <h3>Donald Trump</h3>
-                        <p clsss="description">the 45th President of the US</p>
-                        <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="thumbnail" id="Largeimgdiv">
-                    <img src="images/cd/17.jpg" class="img-circle" id="Largeimg" >
-                    <div class="caption">
-                        <h3>Martin Luther King</h3>
-                        <p clsss="description"> American Baptist minister and activist</p>
-                        <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+      <div class="navbar-header">
+        <a href="Cover.html" class="navbar-brand"><h1>空闲帮</h1></a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="navLi"><a href="home.html">主页</a></li>
+          <li class="navLi"><a href="task.html">我的任务</a></li>
+          <li class="navLi"><a href="Photo.html">我的项目</a></li>
+          <li class="navLi"><a href="Photo.html">我的空间</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="input-group">
+            <input class="form-control" type="text" placeholder="Search for..">
+            <span class="input-group-btn">
+                <a href="javascript0;" type="button" class="btn btn-primary">Go</a>
+            </span>
+          </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li> <a href="#" data-toggle="modal" data-target="#login">登录</a></li>
+          <li> <a href="#" data-toggle="modal" data-target="#register">注册</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <!-- 导航结束 -->
 
+  <!-- 用户登录 -->
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">用户登录</h4>
+        </div>
+
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="col-md-2 control-label">用户名</label>
+              <div class="col-md-10"><input class="form-control" id="Username" placeholder="Email"></div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label">密码</label>
+              <div class="col-md-10"><input class="form-control" id="Password" placeholder="password"></div>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button><button type="button" class="btn btn-primary">点击登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 用户登录结束 -->
+
+  <!-- 用户注册 -->
+  <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">欢迎注册</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="col-md-4 control-label red">用户名</label>
+              <div class="col-md-6"><input class="form-control" id="Username" ></div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label red">密码</label>
+              <div class="col-md-6"><input class="form-control" id="Username" ></div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label red">确认密码</label>
+              <div class="col-md-6"><input class="form-control" id="Username" ></div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label red">电话</label>
+              <div class="col-md-6"><input class="form-control" id="Username" ></div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label red">紧急联系人电话</label>
+              <div class="col-md-6"><input class="form-control" id="Username" ></div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label">紧急联系人手机</label>
+              <div class="col-md-6"><input class="form-control" id="Username"></div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label red">身份证号码</label>
+              <div class="col-md-6"><input class="form-control" id="Username" ></div>
+            </div>
+            
+            <div class="form-group">
+              <label class="col-md-4 control-label red">身份证照片</label>
+              <div class="col-md-6">
+                <img src="images/cd/01.jpg" height="100"/>
+                <input  type="file"  class="form-control" id="Username" >
+                <button class="btn btn-primary">上传</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label">身高</label>
+              <div class="col-md-6"><input class="form-control" id="Username" ></div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label red">年龄</label>
+              <div class="col-md-6"><input class="form-control" id="Username" ></div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label red">地区</label>
+              <div class="col-md-6"><input class="form-control" id="Username"></div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label">性别</label>
+              <div class="col-md-6">
+                <label class="radio-inline"><input type="radio" name="sex" id=boy" value="option1">单身</label>
+                <label class="radio-inline"><input type="radio" name="sex" id="girl" value="option2">恋爱</label>
+                <label class="radio-inline"><input type="radio" name="sex" id="girl" value="option2">已婚</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label">个人照片</label>
+              <div class="col-md-6">
+                <img src="images/cd/01.jpg" height="100"/>
+                <input  type="file"  class="form-control" id="Username">
+                <button class="btn btn-primary">上传</button></div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4 control-label">性别</label>
+              <div class="col-md-6">
+                <label class="radio-inline"><input type="radio" name="sex" id=boy" value="option1">男</label>
+                <label class="radio-inline"><input type="radio" name="sex" id="girl" value="option2">女</label>
+                <label class="radio-inline"><input type="radio" name="sex" id="girl" value="option2">保密</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label">地区</label>
+              <div class="col-md-6">
+  							<div class="dropdown" style="position realtive;">
+                  <button class="btn btn-default dropdown-toggle" id="dropdown1" type="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="true">
+                    请选择<span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown1" style="position：absolute; top：34px;">
+                    <li><a href="#">海淀</a> </li>
+                    <li><a href="#">朝阳</a> </li>
+                    <li><a href="#">丰台</a> </li>
+                    <li><a href="#">东城区</a> </li>
+                    <li><a href="#">西城区</a> </li>
+                    <li><a href="#">通州区</a> </li>
+                    <li><a href="#">昌平区</a> </li>
+                    <li><a href="#">石景山</a> </li>
+                    <li class="divider"></li>
+                    <li><a href="../home2.html">其他</a> </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 兴趣爱好文本框 -->
+            <div class="form-group">
+              <label class="col-md-4 control-label red">爱好</label>
+              <div class="col-md-6"><input class="form-control" id="Username"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-4 control-label">民族</label>
+              <div class="col-md-6">
+                <label class="radio-inline"><input type="radio" name="sex" id=boy" value="option1">汉族</label>
+                <label class="radio-inline"><input type="radio" name="sex" id="girl" value="option2">藏族</label>
+                <label class="radio-inline"><input type="radio" name="sex" id="girl" value="option2">维吾尔族</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-4"></div>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+          </button>
+          <button type="button" class="btn btn-primary">
+            点击注册
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 用户注册结束 -->
+  
+  <!-- 标题 -->
+  <div id="mainword">
     <div class="container">
-        <div class="row" id="product">
-
-            <div class="col-md-4">
-                <div class="thumbnail" id="Largeimgdiv">
-                    <img src="images/cd/05.jpg" class="img-circle" id="Largeimg" >
-                    <div class="caption">
-                        <h3>Michael Jackson</h3>
-                        <p clsss="description">American famous dancer</p>
-                        <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="thumbnail" id="Largeimgdiv">
-                    <img src="images/cd/03.jpg" class="img-circle" id="Largeimg" >
-                    <div class="caption">
-                        <h3>Donald Trump</h3>
-                        <p clsss="description">the 45th President of the US</p>
-                        <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="thumbnail" id="Largeimgdiv">
-                    <img src="images/cd/04.jpg" class="img-circle" id="Largeimg" >
-                    <div class="caption">
-                        <h3>Martin Luther King</h3>
-                        <p clsss="description"> American Baptist minister and activist</p>
-                        <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
-                    </div>
-                </div>
-            </div>
-
+      <div class="row" >
+        <div class="col-md-12">
+          <h2>零碎时间利用网络<br>我们没有浪费时间的概念</h2>
         </div>
+      </div>
     </div>
+  </div>
 
+  <!-- 内容 -->
+  <div class="container">
+    <div class="row" id="product">
+
+      <div class="col-md-4">
+        <div class="thumbnail" id="Largeimgdiv">
+          <img src="images/cd/02.jpg" class="img-circle" id="Largeimg" >
+          <div class="caption">
+            <h3>Michael Jackson</h3>
+            <p clsss="description">American famous dancer</p>
+            <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail" id="Largeimgdiv">
+          <img src="images/cd/41.jpg" class="img-circle" id="Largeimg" >
+          <div class="caption">
+            <h3>Donald Trump</h3>
+            <p clsss="description">the 45th President of the US</p>
+            <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail" id="Largeimgdiv">
+          <img src="images/cd/17.jpg" class="img-circle" id="Largeimg" >
+          <div class="caption">
+            <h3>Martin Luther King</h3>
+            <p clsss="description"> American Baptist minister and activist</p>
+            <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row" id="product">
+
+      <div class="col-md-4">
+        <div class="thumbnail" id="Largeimgdiv">
+          <img src="images/cd/05.jpg" class="img-circle" id="Largeimg" >
+          <div class="caption">
+            <h3>Michael Jackson</h3>
+            <p clsss="description">American famous dancer</p>
+            <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail" id="Largeimgdiv">
+          <img src="images/cd/03.jpg" class="img-circle" id="Largeimg" >
+          <div class="caption">
+            <h3>Donald Trump</h3>
+            <p clsss="description">the 45th President of the US</p>
+            <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail" id="Largeimgdiv">
+          <img src="images/cd/04.jpg" class="img-circle" id="Largeimg" >
+          <div class="caption">
+            <h3>Martin Luther King</h3>
+            <p clsss="description"> American Baptist minister and activist</p>
+            <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row" id="product">
+
+      <div class="col-md-4">
+        <div class="thumbnail" id="Largeimgdiv">
+          <img src="images/cd/10.jpg" class="img-circle" id="Largeimg" >
+          <div class="caption">
+            <h3>Michael Jackson</h3>
+            <p clsss="description">American famous dancer</p>
+            <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail" id="Largeimgdiv">
+          <img src="images/cd/11.jpg" class="img-circle" id="Largeimg" >
+          <div class="caption">
+            <h3>Donald Trump</h3>
+            <p clsss="description">the 45th President of the US</p>
+            <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail" id="Largeimgdiv">
+          <img src="images/cd/12.jpg" class="img-circle" id="Largeimg" >
+          <div class="caption">
+            <h3>Martin Luther King</h3>
+            <p clsss="description"> American Baptist minister and activist</p>
+            <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- 三个产品结束 -->
+
+  <!-- 页脚测试 -->
+  <div id='footer'>
     <div class="container">
-        <div class="row" id="product">
-
-            <div class="col-md-4">
-                <div class="thumbnail" id="Largeimgdiv">
-                    <img src="images/cd/10.jpg" class="img-circle" id="Largeimg" >
-                    <div class="caption">
-                        <h3>Michael Jackson</h3>
-                        <p clsss="description">American famous dancer</p>
-                        <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="thumbnail" id="Largeimgdiv">
-                    <img src="images/cd/11.jpg" class="img-circle" id="Largeimg" >
-                    <div class="caption">
-                        <h3>Donald Trump</h3>
-                        <p clsss="description">the 45th President of the US</p>
-                        <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="thumbnail" id="Largeimgdiv">
-                    <img src="images/cd/12.jpg" class="img-circle" id="Largeimg" >
-                    <div class="caption">
-                        <h3>Martin Luther King</h3>
-                        <p clsss="description"> American Baptist minister and activist</p>
-                        <p><a href="#" class="btn btn-danger" role="button">下载</a> <a href="#" class="btn btn-default" role="button">播放</a></p>
-                    </div>
-                </div>
-            </div>
-
+      <div class="row">
+        <hr width="100%">
+        <div class="col-md-4 tac">
+          <a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a>
         </div>
-    </div>
-    <!-- 三个产品结束 -->
-
-    <!-- 页脚测试 -->
-    <div id='footer'>
-        <div class="container">
-            <div class="row">
-                <hr width="100%">
-                <div class="col-md-4 tac">
-                    <a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a>
-                </div>
-                <div class="col-md-4 tac">
-                    <a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a>
-                </div>
-                <div class="col-md-4 tac">
-                    <a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a>
-                </div>
-                <div class="col-md-12">
-                    <hr width="100%">
-                </div>
-                <h6 id="copyright" >Copyright © 2017 - 2018 空闲帮 版权所有</h6>
-            </div>
+        <div class="col-md-4 tac">
+          <a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a>
         </div>
+        <div class="col-md-4 tac">
+          <a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a><br><a href="#">测试</a>
+        </div>
+        <div class="col-md-12">
+          <hr width="100%">
+        </div>
+        <h6 id="copyright" >Copyright © 2017 - 2018 空闲帮 版权所有</h6>
+      </div>
     </div>
-    <!-- 页脚广告结束 -->
+  </div>
+  <!-- 页脚广告结束 -->
 
-    <audio src="images/music/Good Time.mp3" loop autoplay></audio>
+  <audio src="images/music/Good Time.mp3" loop autoplay></audio>
 
-    <!-- 右侧二维码 -->
-    <div class='twocodediv'>
-        <img src="images/logo/twocodes.jpg" id='twocodes'>
-        <div class='wechat'>扫描上方二维码</div>
-        <div class='wechat'>关注微信公众号</div>
-    </div>
-    <!-- 右侧二维码结束 -->
+  <!-- 右侧二维码 -->
+  <div class='twocodediv'>
+    <img src="images/logo/twocodes.jpg" id='twocodes'>
+    <div class='wechat'>扫描上方二维码</div>
+    <div class='wechat'>关注微信公众号</div>
+  </div>
+  <!-- 右侧二维码结束 -->
 
-    <!-- 右下角返回主页 -->
-    <span id="returnTop">返回<br>顶部</span>
-    <!-- 右下角返回主页 -->
+  <!-- 右下角返回主页 -->
+  <span id="returnTop">返回<br>顶部</span>
+  <!-- 右下角返回主页 -->
 </body>
 </html>
